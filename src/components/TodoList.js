@@ -4,7 +4,7 @@ const TodoList = ({todos,handleEdit,handleDelete}) => {
   return (
     <ul className='allTodos'>
     {
-      todos.map((t)=>{
+      todos.map((t)=>(
         <li className='singleTodo'>
     <span className='todoText'key={t.id}>{t.todo}</span>
     <button onClick={()=>handleEdit(t.id)}>Edit</button>
@@ -12,12 +12,12 @@ const TodoList = ({todos,handleEdit,handleDelete}) => {
 
     </li>
 
-      })
+      ))
     }
     
     </ul>
     
   );
-}
+};
 
 export default TodoList;
